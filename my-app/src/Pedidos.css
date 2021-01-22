@@ -508,64 +508,8 @@ h2 {
     flex-direction: row;
 }
 
+/*-------------------------vista Registro & Inicio de sesión----------------------*/
 
-/*------------------Tablet----------------------------------------------------*/
-@media only screen and (max-width: 1025px) {
-    .menuSection {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-    .menuHeader {
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-top: 15px;
-        height:200px;
-        margin-left: 0%;
-        margin-right: 20px;
-        justify-content: flex-start;
-    }
-    .btnMenuType {
-        width: 30vw;
-        height: 20px;
-        border-style: hidden;
-        color: rgb(44, 44, 44);
-        font-weight: bold;
-        font-size: 18px;
-        border-bottom: rgb(177, 175, 175);
-        border-bottom-style: hidden;
-        outline: none ;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 20px;
-    }
-    .menuItem {
-        font-size: 20px;
-        height: 100px;
-        width: 220px;
-    }
-    .listItems{
-        margin:0%;
-        height: 250px;
-        width:95vw;
-        padding-inline-start: 20px;
-    }
-    .header{
-        font-size: 18px;
-    }
-    .listSelectedItems{
-        font-size: 20px;
-        width:75vw;
-        padding-inline-start: 0px;
-    }
-    .selectedItem {
-        width:90vw;
-    }
-
-  } 
-  /*
   .DivLogo{
     background-color: #B23A48;
     width: 60vw;
@@ -640,13 +584,13 @@ h2 {
     border-radius: 10px;
     padding: 7px 80px;
    /*  margin-bottom: 30px; */
-   /*
+   
     color: black;
     box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.2);
     font-size: large;
    
 }
-*/
+
 /* .DivLogo{
     background-color: rgb(255, 255, 255);
     border-radius: 100%;
@@ -665,8 +609,231 @@ h2 {
     margin-top: 20px;
     font-size: x-large;
   }
-  */
-   
+*/
+
+/*--------------------------signUp--------------------------------*/
+.signUpBody{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.87);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+form h2{
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.signUpMain {
+    display: flex;
+    flex-direction: row;
+    width:70vw;
+    height: 70vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.signUpSection1 {
+    width:55%;
+    background-image: url('signUpPic.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: fixed;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.signUpSection1 h1 {
+    color: whitesmoke;
+    margin-top: 25vh;
+    font-size: 50px;
+}
+.signUpSection2 {
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+.signUpSection2 input {
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.87);
+    border:0;
+    border-bottom: 2.5px solid rgb(177, 175, 175);
+    font-size: 16px;
+    color:rgb(177, 175, 175);
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+}
+.divInputRadio {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width:60%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.inputRadios {
+    background-color: rgba(255, 255, 255, 0.87);
+    display: block;
+    position: relative;
+}
+.inputRadios label {
+        padding: 12px 10px 12px 100px;
+        display: block;
+        text-align: left;
+        color: #3C454C;
+}
+.divInputRadio input:checked ~ label {
+    color: #fff;
+    background-color: #54E0C7;
+    border-color: #54E0C7;
+  }
+
+.divInputRadio input{
+        width: 25px;
+        height: 25px;
+        order: 1;
+        z-index: 2;
+        position: absolute;
+        left: 30px;
+        top: 45%;
+        transform: translateY(-50%);
+        cursor: pointer;
+}
+.submitForm{
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    border-style: hidden;
+    background-color: #B23A48;
+    height:50px;
+    color:white;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/*------------------Tablet----------------------------------------------------*/
+@media only screen and (max-width: 1025px) {
+    .menuSection {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .menuHeader {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        height:200px;
+        margin-left: 0%;
+        margin-right: 20px;
+        justify-content: flex-start;
+    }
+    .btnMenuType {
+        width: 30vw;
+        height: 20px;
+        border-style: hidden;
+        color: rgb(44, 44, 44);
+        font-weight: bold;
+        font-size: 18px;
+        border-bottom: rgb(177, 175, 175);
+        border-bottom-style: hidden;
+        outline: none ;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .menuItem {
+        font-size: 20px;
+        height: 100px;
+        width: 220px;
+    }
+    .listItems{
+        margin:0%;
+        height: 250px;
+        width:95vw;
+        padding-inline-start: 20px;
+    }
+    .header{
+        font-size: 18px;
+    }
+    .listSelectedItems{
+        font-size: 20px;
+        width:75vw;
+        padding-inline-start: 0px;
+    }
+    .selectedItem {
+        width:90vw;
+    }
+    /*----------signUp----------------*/
+    .signUpMain {
+        display: flex;
+        flex-direction: column;
+        width:80vw;
+        height: 80vh;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .signUpSection1{
+        width:100%;
+        height: 20%;
+    }
+    .signUpSection1 h1{
+        margin-top: 45px;
+        font-size: 35px;
+        display: flex;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .signUpSection2{
+        width:100%;
+        font-size: 20px;
+        height: 80%;
+        background-color: rgba(255, 255, 255, 0.87);
+    }
+    .signUpSection2 input{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    form{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    form h2{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .submitForm{
+        font-size: 20px;
+        margin-bottom: 0%;
+    }
+  } 
+  
   
 /*-------------------Movil-----------------------------------*/
 @media only screen and (max-width: 730px) {
@@ -798,5 +965,52 @@ h2 {
     }
     .btnPreparacion{
         font-size: 15px;
+    }
+    /*----------signUp----------------*/
+    .signUpMain {
+        display: flex;
+        flex-direction: column;
+        width:80vw;
+        height: 80vh;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .signUpSection1{
+        width:100%;
+        height: 20%;
+    }
+    .signUpSection1 h1{
+        margin-top: 20px;
+    }
+    .signUpSection2{
+        width:100%;
+        font-size: 15px;
+        height: 80%;
+    }
+    .signUpSection2 input{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    form{
+        width: 90%;
+    }
+    form h2{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .submitForm{
+        font-size: 15px;
+        height: 35px;
+        width: 60%;
+    }
+    .divInputRadio label{
+        width:60%;
+        font-size: 15px;
+    }
+    .divInputRadio input{
+        left: 15px;
+    }
+    .inputRadios label {
+        padding: 12px 10px 12px 60px;
     }
 }
